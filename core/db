@@ -1,1 +1,16 @@
-Today i will learn the quality crud with soutinho
+{
+  "todos": [
+    {
+      "id": "8e5f60d1-36a6-4be0-8707-67b2e4cf0a69",
+      "date": "2023-07-25T19:58:20.497Z",
+      "content": "Primeira TODO",
+      "done": false
+    },
+    {
+      "id": "a810bb43-34ae-4c24-bc68-7b384ad327f7",
+      "date": "2023-07-25T19:58:20.497Z",
+      "content": "Segunda TODO",
+      "done": false
+    }
+  ]
+}
