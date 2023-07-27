@@ -101,7 +101,7 @@ function CLEAR_DB() {
 
 CLEAR_DB();
 const firstTodo = create("Primeira TODO");
-const secondTodo = create("Segunda TODO");
+const secondTodo = create("Vasco TODO");
 const thirdTodo = create("Terceira TODO");
 deleteById(thirdTodo.id);
 // update(thirdTodo.id, {
