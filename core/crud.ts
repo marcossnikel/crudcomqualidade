@@ -33,7 +33,7 @@ function create(content: string): Todo {
     return todo;
 }
 
-function read(): Array<Todo> {
+export function read(): Array<Todo> {
     const dbString = fs.readFileSync(DB_FILE_PATH, "utf-8");
     const db = JSON.parse(dbString || "{}");
     if (!db.todos) {
@@ -99,14 +99,15 @@ function CLEAR_DB() {
     fs.writeFileSync(DB_FILE_PATH, "");
 }
 
-CLEAR_DB();
-const firstTodo = create("Primeira TODO");
-const secondTodo = create("Vasco TODO");
-const thirdTodo = create("Terceira TODO");
-console.log(thirdTodo);
+// S I M U L A T I O N
+// CLEAR_DB();
+// const firstTodo = create("Primeira TODO");
+// const secondTodo = create("Vasco TODO");
+// const thirdTodo = create("Terceira TODO");
+// console.log(thirdTodo);
 
-deleteById(thirdTodo.id);
-// update(thirdTodo.id, {
-//   content: "Opa, Teste",
-//   done: true,
-// });
+// deleteById(thirdTodo.id);
+// // update(thirdTodo.id, {
+// //   content: "Opa, Teste",
+// //   done: true,
+// // });
